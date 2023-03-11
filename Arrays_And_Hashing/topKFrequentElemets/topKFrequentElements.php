@@ -1,6 +1,6 @@
 <?php
 
-function topKMostFrequentElements($nums, $k){
+function topKFrequent($nums, $k){
     $frequencyArray = array();
     $heap = new SplMinHeap();
     foreach($nums as $key => $input){
