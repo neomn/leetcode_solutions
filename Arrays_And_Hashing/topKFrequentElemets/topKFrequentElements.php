@@ -1,12 +1,12 @@
 <?php
 
-function topKMostFrequentElements($inputArray, $K){
+function topKMostFrequentElements($nums, $k){
     $frequencyArray = array();
     $heap = new SplMinHeap();
-    foreach($inputArray as $key => $input){
+    foreach($nums as $key => $input){
         !isset($frequencyArray[$input]) ? $frequencyArray[$input] = 0 : $frequencyArray[$input]++;
         $heap->insert([$frequencyArray[$input], $input]);
-        if ($heap->count() > $K)
+        if ($heap->count() > $k)
             $heap->extract();
     }
     $result = array();
