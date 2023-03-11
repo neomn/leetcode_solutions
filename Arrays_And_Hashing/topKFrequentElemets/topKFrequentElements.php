@@ -8,7 +8,7 @@ function topKFrequent($nums, $k){
         $heap->insert([$frequencyArray[$input], $input]);
     }
     $result = array();
-    while( !$heap->isEmpty() )
+    for( $i=0; $i<$k; $i++ )
         $result[] = $heap->extract()[1];
 
     return $result;
