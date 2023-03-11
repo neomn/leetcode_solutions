@@ -2,19 +2,19 @@
 
 function topKFrequent($nums, $k){
     $frequencyArray = array();
-    $heap = new SplMinHeap();
-    foreach($nums as $key => $input)
-        !isset($frequencyArray[$input]) ? $frequencyArray[$input] = 0 : $frequencyArray[$input]++;
+    foreach($nums as $num)
+        !isset($frequencyArray[$num]) ? $frequencyArray[$num] = 1 : $frequencyArray[$num]++;
 
-    foreach ($frequencyArray as $num => $repeatedTimes ){
-        $heap->insert([$repeatedTimes, $num]);
-        if ($heap->count() > $k)
-            $heap->extract();
-    }
+    $buckets = array_fill(0, count($nums) + 1, array());
+    foreach($frequencyArray as $num => $freq)
+        $buckets[$freq][] = $num;
 
     $result = array();
-    while(!$heap->isEmpty())
-        $result[] = $heap->extract()[1];
+    for($i = count($buckets) - 1; $i >= 0 && count($result) < $k; $i--)
+        if(!empty($buckets[$i]))
+            $result = array_merge($result, $buckets[$i]);
 
     return $result;
 }
+
+
