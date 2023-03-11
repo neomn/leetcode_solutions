@@ -2,12 +2,10 @@
 
 function topKFrequent($nums, $k){
     $frequencyArray = array();
-    $heap = new SplMinHeap();
+    $heap = new SplMaxHeap();
     foreach($nums as $key => $input){
         !isset($frequencyArray[$input]) ? $frequencyArray[$input] = 0 : $frequencyArray[$input]++;
         $heap->insert([$frequencyArray[$input], $input]);
-        if ($heap->count() > $k)
-            $heap->extract();
     }
     $result = array();
     while( !$heap->isEmpty() )
