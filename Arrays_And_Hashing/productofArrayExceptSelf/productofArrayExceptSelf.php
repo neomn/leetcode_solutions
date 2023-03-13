@@ -18,4 +18,4 @@ function productExceptSelf($nums) {
     return $output;
 }
 
-print_r(productExceptSelf(  [1,2,3,4]  ));
+print_r(productExceptSelf(  [-1,1,0,-3,3]  ));
