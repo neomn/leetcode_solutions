@@ -2,9 +2,10 @@
 
 function productExceptSelf($nums) {
     $output = array();
-    foreach($nums as $key => $num)
-        $key !== 0 ? $output[$key] = $output[$key-1] * ($nums[$key-1]): $output[$key] = 1;
+    foreach($nums as $key => $num){
 
+        $key !== 0 ? $output[$key] = $output[$key-1] * ($nums[$key-1]): $output[$key] = 1;
+    }
 
     $postProducts = 1;
     foreach($nums as $key => $num){
@@ -13,9 +14,9 @@ function productExceptSelf($nums) {
             $postNumber = $nums[$reversedKey+1];
             $postProducts *= $postNumber;
         }
-        $output[$reversedKey] = $output[$reversedKey]*$postProducts;
+        $output[$reversedKey] *= $postProducts;
     }
     return $output;
 }
 
-print_r(productExceptSelf(  [-1,1,0,-3,3]  ));
+print_r(productExceptSelf(  [1,2,3,4]  ));
