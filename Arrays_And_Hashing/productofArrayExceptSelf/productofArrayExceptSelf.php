@@ -25,11 +25,11 @@ function productExceptSelf($nums) {
     $preProducts = 1;
     $postProducts = 1;
 
-    for ($i = 0; $i < $numsCount; $i++) {
-        $output[$i] *= $preProducts;
-        $preProducts *= $nums[$i];
+    for ($index = 0; $index < $numsCount; $index++) {
+        $output[$index] *= $preProducts;
+        $preProducts *= $nums[$index];
 
-        $reversedIndex = $numsCount - $i - 1;
+        $reversedIndex = $numsCount - $index - 1;
         $output[$reversedIndex] *= $postProducts;
         $postProducts *= $nums[$reversedIndex];
     }
