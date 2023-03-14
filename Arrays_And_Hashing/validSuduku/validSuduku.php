@@ -1,7 +1,15 @@
 <?php
 
 function isValidSudoku($board) {
+    $rowIsValid = false;
+    $columnIsValid = false;
+    $subBoardIsValid = false;
 
+    for ($i=0; $i<9; $i++){
+        for ($j=0; $j<9; $j++){
+
+        }
+    }
 }
 
 $board = [["5","3",".",".","7",".",".",".","."]
