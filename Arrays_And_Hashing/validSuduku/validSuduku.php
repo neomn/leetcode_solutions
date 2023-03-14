@@ -1,16 +1,26 @@
 <?php
 
 function isValidSudoku($board) {
-    $rowIsValid = false;
+    $currentRow = [];
     $columnIsValid = false;
     $subBoardIsValid = false;
 
     for ($i=0; $i<9; $i++){
         for ($j=0; $j<9; $j++){
-
+            if ($board[$i][$j] !== '.'){
+                if ( !in_array($board[$i][$j], $currentRow)){
+                    $currentRow[] = $board[$i][$j];
+                } else {
+                    return false;
+                }
+            }
         }
+        $currentRow = [];
     }
+    return true;
 }
+
+
 
 $board = [["5","3",".",".","7",".",".",".","."]
         ,["6",".",".","1","9","5",".",".","."]
