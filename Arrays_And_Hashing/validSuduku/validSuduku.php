@@ -2,20 +2,24 @@
 
 function isValidSudoku($board) {
     $currentRow = [];
-    $columnIsValid = false;
+    $currentColumn = [];
     $subBoardIsValid = false;
 
     for ($i=0; $i<9; $i++){
         for ($j=0; $j<9; $j++){
-            if ($board[$i][$j] !== '.'){
-                if ( !in_array($board[$i][$j], $currentRow)){
+            if ($board[$i][$j] !== '.' && $board[$j][$i] !== '.'){
+
+                if (!in_array($board[$i][$j], $currentRow))
                     $currentRow[] = $board[$i][$j];
-                } else {
-                    return false;
-                }
+                else echo "invalid row \n";
+
+                if (!in_array($board[$j][$i], $currentColumn))
+                    $currentColumn[] = $board[$j][$i];
+                else echo "invalid column\n";
             }
         }
         $currentRow = [];
+        $currentColumn = [];
     }
     return true;
 }
