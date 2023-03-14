@@ -20,16 +20,16 @@
 
 
 function productExceptSelf($nums) {
-    $n = count($nums);
-    $output = array_fill(0, $n, 1);
+    $numsCount = count($nums);
+    $output = array_fill(0, $numsCount, 1);
     $preProducts = 1;
     $postProducts = 1;
 
-    for ($i = 0; $i < $n; $i++) {
+    for ($i = 0; $i < $numsCount; $i++) {
         $output[$i] *= $preProducts;
         $preProducts *= $nums[$i];
 
-        $j = $n - $i - 1;
+        $j = $numsCount - $i - 1;
         $output[$j] *= $postProducts;
         $postProducts *= $nums[$j];
     }
