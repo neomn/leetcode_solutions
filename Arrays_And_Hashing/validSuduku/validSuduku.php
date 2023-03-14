@@ -3,7 +3,7 @@
 function isValidSudoku($board) {
     $currentRow = [];
     $currentColumn = [];
-    $subBoardIsValid = false;
+    $currentSubBoard = [];
 
     for ($i=0; $i<9; $i++){
         for ($j=0; $j<9; $j++){
@@ -16,6 +16,7 @@ function isValidSudoku($board) {
                 if (!in_array($board[$j][$i], $currentColumn))
                     $currentColumn[] = $board[$j][$i];
                 else echo "invalid column\n";
+
             }
         }
         $currentRow = [];
