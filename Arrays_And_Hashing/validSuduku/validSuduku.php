@@ -8,7 +8,7 @@ function isValidSudoku($board) {
     for ($i=0; $i<9; $i++){
         for ($j=0; $j<9; $j++){
 
-            $subBoardI = 1 ;
+            $subBoardI = floor($j/3) + floor($i/3)*3 ;
             $subBoardJ = $j%3 + floor($i/3)*3 ;
 
             echo $subBoardI . "  ";
