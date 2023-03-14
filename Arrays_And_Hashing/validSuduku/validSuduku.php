@@ -9,25 +9,26 @@ function isValidSudoku($board) {
         for ($j=0; $j<9; $j++){
 
             $subBoardI = 1 ;
-            $subBoardJ = 1 ;
+            $subBoardJ = $j%3 + floor($i/3)*3 ;
+
             echo $subBoardI . "  ";
             echo $subBoardJ . "\n";
 
-            if ($board[$i][$j] !== '.' && $board[$j][$i] !== '.' && $board[$subBoardI][$subBoardJ] !== '.'){
-
-                if (!in_array($board[$i][$j], $currentRow))
-                    $currentRow[] = $board[$i][$j];
-                else echo "invalid row \n";
-
-                if (!in_array($board[$j][$i], $currentColumn))
-                    $currentColumn[] = $board[$j][$i];
-                else echo "invalid column\n";
-
-                if (!in_array($currentSubBoard, $board[$subBoardI][$subBoardJ])){
-                    $currentSubBoard[] = $board[$subBoardI][$subBoardJ];
-                } else echo "invalid subBoard\n";
-
-            }
+//            if ($board[$i][$j] !== '.' && $board[$j][$i] !== '.' && $board[$subBoardI][$subBoardJ] !== '.'){
+//
+//                if (!in_array($board[$i][$j], $currentRow))
+//                    $currentRow[] = $board[$i][$j];
+//                else echo "invalid row \n";
+//
+//                if (!in_array($board[$j][$i], $currentColumn))
+//                    $currentColumn[] = $board[$j][$i];
+//                else echo "invalid column\n";
+//
+//                if (!in_array($currentSubBoard, $board[$subBoardI][$subBoardJ])){
+//                    $currentSubBoard[] = $board[$subBoardI][$subBoardJ];
+//                } else echo "invalid subBoard\n";
+//
+//            }
         }
         $currentRow = [];
         $currentColumn = [];
