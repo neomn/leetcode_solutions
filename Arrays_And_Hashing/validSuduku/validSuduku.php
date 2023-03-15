@@ -25,32 +25,39 @@ function isValidSudoku($board) {
 
             echo 'row value > '. $board[$i][$j] . '        i='.$i.'  j='.$j . "\n";
             echo 'column value > '. $board[$j][$i] .'     j='.$j.'  i='.$i . "\n";
-            echo 'subBoard value > '. $board[$subBoardI][$subBoardJ] .'        i='.$subBoardI.'  j='.$subBoardJ . "\n";
+            echo 'subBoard value > '. $board[$subBoardI][$subBoardJ] .'   i='.$subBoardI.'  j='.$subBoardJ . "\n";
 
-            if ($board[$i][$j] !== '.' || $board[$j][$i] !== '.' || $board[$subBoardI][$subBoardJ] !== '.'){
+//            if ($board[$i][$j] !== '.' || $board[$j][$i] !== '.' || $board[$subBoardI][$subBoardJ] !== '.'){
 
-                if ($board[$i][$j] !== '.' && !in_array($board[$i][$j], $currentRow))
-                    $currentRow[] = $board[$i][$j];
-                else {
-                    echo 'invalid row > ';
-                    print_r($board[$i][$j] !== '.');
-                    return false;
-                }
+                if ($board[$i][$j] !== '.')
+                    if (!in_array($board[$i][$j], $currentRow))
+                        $currentRow[] = $board[$i][$j];
+                    else return false;
+//                else {
+//                    echo 'invalid row > ';
+//                    print_r($board[$i][$j] !== '.');
+//                    return false;
+//                }
 
-                if ($board[$j][$i] !== '.' && !in_array($board[$j][$i], $currentColumn))
-                    $currentColumn[] = $board[$j][$i];
-                else {
-                    echo 'invalid column';
-                    return false;
-                }
+                if ($board[$j][$i] !== '.')
+                    if (!in_array($board[$j][$i], $currentColumn))
+                        $currentColumn[] = $board[$j][$i];
+                    else return false;
+//                else {
+//                    echo 'invalid column';
+//                    return false;
+//                }
 
-                if ($board[$subBoardI][$subBoardJ] !== '.' && !in_array($board[$subBoardI][$subBoardJ], $currentSubBoard)){
-                    $currentSubBoard[] = $board[$subBoardI][$subBoardJ];
-                } else {
-                    echo 'invalid box';
-                    return false;
-                }
-            }
+                if ($board[$subBoardI][$subBoardJ] !== '.')
+                    if (!in_array($board[$subBoardI][$subBoardJ], $currentSubBoard))
+                        $currentSubBoard[] = $board[$subBoardI][$subBoardJ];
+                    else return false;
+//                } else {
+//                    echo 'invalid box';
+//                    return false;
+//                }
+
+//            }
             echo 'row > ';
             print_r($currentRow);
             echo "\n";
