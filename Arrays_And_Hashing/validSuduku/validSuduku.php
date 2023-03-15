@@ -11,9 +11,6 @@ function isValidSudoku($board) {
             $subBoardI = floor($j/3) + floor($i/3)*3 ;
             $subBoardJ = $j%3 + floor($i/3)*3 ;
 
-//            echo $subBoardI . "  ";
-//            echo $subBoardJ . "\n";
-
             echo 'first condition > ';
             print_r($board[$i][$j] !== '.' );
             echo "\n";
