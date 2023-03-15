@@ -24,13 +24,16 @@ function isValidSudoku($board) {
             echo "\n";
 
             echo 'board row value > '. $board[$i][$j] . '        i='.$i.'  j='.$j . "\n";
-            echo 'board column value > '. $board[$j][$i] .'     i='.$i.'  j='.$j . "\n";
-            echo 'sub board value > '. $board[$subBoardI][$subBoardJ] .'        i='.$i.'  j='.$j . "\n\n";
+            echo 'board column value > '. $board[$j][$i] .'     j='.$j.'  i='.$i . "\n";
+            echo 'sub board value > '. $board[$subBoardI][$subBoardJ] .'        i='.$subBoardI.'  j='.$subBoardJ . "\n";
 
             if ($board[$i][$j] !== '.' && $board[$j][$i] !== '.' && $board[$subBoardI][$subBoardJ] !== '.'){
 
-                if (!in_array($board[$i][$j], $currentRow))
+                if (!in_array($board[$i][$j], $currentRow)){
+
                     $currentRow[] = $board[$i][$j];
+                    print_r ($currentRow);
+                }
                 else echo "invalid row \n";
 
                 if (!in_array($board[$j][$i], $currentColumn))
@@ -42,6 +45,7 @@ function isValidSudoku($board) {
                 } else echo "invalid subBoard\n";
 
             }
+            echo "\n";
         }
         $currentRow = [];
         $currentColumn = [];
