@@ -40,7 +40,7 @@ function isValidSudoku($board) {
                 if (!in_array($board[$j][$i], $currentColumn))
                     $currentColumn[] = $board[$j][$i];
                 else {
-                    print_r($currentColumn)
+                    print_r($currentColumn);
                     echo 'invalid column';
                     return false;
                 }
