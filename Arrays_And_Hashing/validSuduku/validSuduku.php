@@ -29,20 +29,29 @@ function isValidSudoku($board) {
 
             if ($board[$i][$j] !== '.' && $board[$j][$i] !== '.' && $board[$subBoardI][$subBoardJ] !== '.'){
 
-                if (!in_array($board[$i][$j], $currentRow)){
-
+                if (!in_array($board[$i][$j], $currentRow))
                     $currentRow[] = $board[$i][$j];
-                    print_r ($currentRow);
+                else {
+                    print_r($currentRow);
+                    echo 'invalid row';
+                    return false;
                 }
-                else echo "invalid row \n";
 
                 if (!in_array($board[$j][$i], $currentColumn))
                     $currentColumn[] = $board[$j][$i];
-                else echo "invalid column\n";
+                else {
+                    print_r($currentColumn)
+                    echo 'invalid column';
+                    return false;
+                }
 
                 if (!in_array($board[$subBoardI][$subBoardJ], $currentSubBoard)){
                     $currentSubBoard[] = $board[$subBoardI][$subBoardJ];
-                } else echo "invalid subBoard\n";
+                } else {
+                    print_r($currentSubBoard);
+                    echo 'invalid box';
+                    return false;
+                }
 
             }
             echo "\n";
