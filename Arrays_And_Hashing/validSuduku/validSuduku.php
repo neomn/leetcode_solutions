@@ -27,12 +27,11 @@ function isValidSudoku($board) {
             echo 'board column value > '. $board[$j][$i] .'     j='.$j.'  i='.$i . "\n";
             echo 'sub board value > '. $board[$subBoardI][$subBoardJ] .'        i='.$subBoardI.'  j='.$subBoardJ . "\n";
 
-            if ($board[$i][$j] !== '.' && $board[$j][$i] !== '.' && $board[$subBoardI][$subBoardJ] !== '.'){
+            if ($board[$i][$j] !== '.' || $board[$j][$i] !== '.' || $board[$subBoardI][$subBoardJ] !== '.'){
 
                 if (!in_array($board[$i][$j], $currentRow))
                     $currentRow[] = $board[$i][$j];
                 else {
-                    print_r($currentRow);
                     echo 'invalid row';
                     return false;
                 }
@@ -40,7 +39,6 @@ function isValidSudoku($board) {
                 if (!in_array($board[$j][$i], $currentColumn))
                     $currentColumn[] = $board[$j][$i];
                 else {
-                    print_r($currentColumn);
                     echo 'invalid column';
                     return false;
                 }
@@ -48,13 +46,21 @@ function isValidSudoku($board) {
                 if (!in_array($board[$subBoardI][$subBoardJ], $currentSubBoard)){
                     $currentSubBoard[] = $board[$subBoardI][$subBoardJ];
                 } else {
-                    print_r($currentSubBoard);
                     echo 'invalid box';
                     return false;
                 }
-
             }
+            echo 'row > ';
+            print_r($currentRow);
             echo "\n";
+
+            echo 'column > ';
+            print_r($currentColumn);
+            echo "\n";
+
+            echo 'box > ';
+            print_r($currentSubBoard);
+            echo "\n\n";
         }
         $currentRow = [];
         $currentColumn = [];
@@ -68,7 +74,7 @@ function isValidSudoku($board) {
 
 
 $board = [["5","3",".",".","7",".",".",".","."]
-         ,["6","6",".","1","9","5",".",".","."]
+         ,["6",".",".","1","9","5",".",".","."]
          ,[".","9","8",".",".",".",".","6","."]
          ,["8",".",".",".","6",".",".",".","3"]
          ,["4",".",".","8",".","3",".",".","1"]
