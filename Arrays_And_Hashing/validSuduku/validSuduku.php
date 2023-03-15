@@ -7,34 +7,24 @@ function isValidSudoku($board)
         $currentColumn = [];
         $currentSubBoard = [];
         for ($j = 0; $j < 9; $j++) {
-
             $subBoardI = floor($j / 3) + floor($i / 3) * 3;
-//            $subBoardJ = $j % 3 + floor($i / 3) * 3;
-            $subBoardJ = ($i%3 *3) + $j%3   ;
-
-            echo $subBoardI,$subBoardJ;
-            echo "\n";
+            $subBoardJ = ($i%3 *3) + $j%3;
 
             if ($board[$i][$j] !== '.')
                 if (!in_array($board[$i][$j], $currentRow))
                     $currentRow[] = $board[$i][$j];
-//                else return false;
+                else return false;
 
             if ($board[$j][$i] !== '.')
                 if (!in_array($board[$j][$i], $currentColumn))
                     $currentColumn[] = $board[$j][$i];
-//                else return false;
+                else return false;
 
             if ($board[$subBoardI][$subBoardJ] !== '.')
                 if (!in_array($board[$subBoardI][$subBoardJ], $currentSubBoard))
                     $currentSubBoard[] = $board[$subBoardI][$subBoardJ];
-//                else return false;
-
-//            echo $subBoardI,$subBoardJ;
-//            print_r($currentSubBoard);
-//            echo "\n";
+                else return false;
         }
-        echo "\n\n";
     }
     return true;
 }
