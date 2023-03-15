@@ -14,6 +14,22 @@ function isValidSudoku($board) {
 //            echo $subBoardI . "  ";
 //            echo $subBoardJ . "\n";
 
+            echo 'first condition > ';
+            print_r($board[$i][$j] !== '.' );
+            echo "\n";
+
+            echo 'second condition > ';
+            print_r($board[$j][$i] !== '.');
+            echo "\n";
+
+            echo 'third condition > ';
+            print_r($board[$subBoardI][$subBoardJ] !== '.');
+            echo "\n";
+
+            echo 'board row value > '. $board[$i][$j] . '     i='.$i.'  j='.$j . "\n";
+            echo 'board column value > '. $board[$j][$i] .'     i='.$i.'  j='.$j . "\n";
+            echo 'sub board value > '. $board[$subBoardI][$subBoardJ] .'     i='.$i.'  j='.$j . "\n\n";
+
             if ($board[$i][$j] !== '.' && $board[$j][$i] !== '.' && $board[$subBoardI][$subBoardJ] !== '.'){
 
                 if (!in_array($board[$i][$j], $currentRow))
@@ -34,21 +50,21 @@ function isValidSudoku($board) {
         $currentColumn = [];
         $currentSubBoard = [];
 
-        echo "\n";
+        echo "\n\n";
     }
     return true;
 }
 
 
 
-$board = [["5","3",".",".","7",".",".","5","."]
-        ,["6",".",".","1","9","5",".",".","."]
-        ,[".","9","8",".",".",".",".","6","."]
-        ,["8",".",".",".","6",".",".",".","3"]
-        ,["4",".",".","8",".","3",".",".","1"]
-        ,["7",".",".",".","2",".",".",".","6"]
-        ,[".","6",".",".",".",".","2","8","."]
-        ,[".",".",".","4","1","9",".",".","5"]
-        ,[".",".",".",".","8",".",".","7","9"]];
+$board = [["5","3",".",".","7",".",".",".","."]
+    ,["6",".",".","1","9","5",".",".","."]
+    ,[".","9","8",".",".",".",".","6","."]
+    ,["8",".",".",".","6",".",".",".","3"]
+    ,["4",".",".","8",".","3",".",".","1"]
+    ,["7",".",".",".","2",".",".",".","6"]
+    ,[".","6",".",".",".",".","2","8","."]
+    ,[".",".",".","4","1","9",".",".","5"]
+    ,["6",".",".",".","8",".",".","7","9"]];
 
 print_r(isValidSudoku( $board ));
