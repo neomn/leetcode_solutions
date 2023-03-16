@@ -5,7 +5,9 @@ function longestConsecutive($nums) {
     $longestLength = 0;
     foreach ($nums as $num) {
         if (!isset($set[$num-1])) {
-
+            $length = 1;
+            while (isset($set[$num+$length]))
+                $length++;
         }
     }
 }
