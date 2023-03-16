@@ -4,7 +4,9 @@ function longestConsecutive($nums) {
     $set = array_flip($nums);
     $longestLength = 0;
     foreach ($nums as $num) {
+        if (!isset($set[$num-1])) {
 
+        }
     }
 }
 
