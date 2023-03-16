@@ -8,6 +8,7 @@ function longestConsecutive($nums) {
             $length = 1;
             while (isset($set[$num+$length]))
                 $length++;
+            $longestLength = max($longestLength, $length);
         }
     }
 }
