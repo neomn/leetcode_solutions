@@ -1,6 +1,8 @@
 <?php
 
 function trap($height) {
+    $maxHeightLeft= 0;
+    $maxHeightRight= 0;
 
 }
 
