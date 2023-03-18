@@ -17,6 +17,7 @@ function isPalindrome($s) {
         $leftPointer++;
         $rightPointer--;
     }
+    return true;
 }
 
 $sample = "A man, a plan, a canal: Panama";
