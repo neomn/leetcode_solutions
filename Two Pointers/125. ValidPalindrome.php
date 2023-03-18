@@ -14,6 +14,8 @@ function isPalindrome($s) {
         }
         if (strcmp(strtolower($s[$leftPointer]),strtolower($s[$rightPointer])) !== 0)
             return false;
+        $leftPointer++;
+        $rightPointer--;
     }
 }
 
