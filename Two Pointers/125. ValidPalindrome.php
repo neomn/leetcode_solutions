@@ -8,6 +8,10 @@ function isPalindrome($s) {
             $leftPointer++;
             continue;
         }
+        if (!ctype_alnum($s[$rightPointer])){
+            $rightPointer--;
+            continue;
+        }
     }
 }
 
