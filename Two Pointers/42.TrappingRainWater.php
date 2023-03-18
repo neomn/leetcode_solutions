@@ -4,7 +4,9 @@ function trap($height) {
     $trappedWater = 0;
     $maxHeightLeft= 0;
     $maxHeightRight= 0;
+    foreach ($height as $index => $h){
 
+    }
     return $trappedWater;
 }
 
