@@ -1,14 +1,8 @@
 <?php
 
 function isPalindrome($s) {
-    if (strlen($s)<=1)
-        return true;
     $leftPointer = 0;
-    $rightPointer = strlen($s)-1;
-
-//    while($leftPointer < $rightPointer){
-//
-//    }
+    $rightPointer = count($s)-1;
 }
 
 $sample = "A man, a plan, a canal: Panama";
