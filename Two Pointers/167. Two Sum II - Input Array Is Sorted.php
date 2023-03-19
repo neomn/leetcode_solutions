@@ -18,7 +18,9 @@ function twoSum($numbers, $target) {
             $result[] = $edgePointerRight+1;
             return $result;
         }
-        $numbers[$edgePointerleft]+$numbers[$edgePointerRight] < $target ? $edgePointerRight-- : $edgePointerleft++;
+        $numbers[$edgePointerleft]+$numbers[$edgePointerRight] < $target ? $edgePointerleft++ : $edgePointerRight--;
+        $numbers[$middlePointerLeft]+$numbers[$middlePointerRight] > $target ? $middlePointerLeft-- : $middlePointerRight++;
+
 
     }
 
