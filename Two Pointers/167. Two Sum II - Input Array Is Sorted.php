@@ -7,17 +7,17 @@ function twoSum($numbers, $target) {
     $middlePointerRight = $middlePointerLeft+1;
     $result = [];
     while (count($result)===0){
-//        if ($numbers[$edgePointerleft]+$numbers[$edgePointerRight] == $target){
-//            $result[] = ++$edgePointerleft;
-//            $result[] = ++$edgePointerRight;
-//            return $result;
-//        }
+        if ($numbers[$edgePointerleft]+$numbers[$edgePointerRight] == $target){
+            $result[] = ++$edgePointerleft;
+            $result[] = ++$edgePointerRight;
+            return $result;
+        }
         if ($numbers[$middlePointerLeft]+$numbers[$middlePointerRight] == $target){
             $result[] = ++$middlePointerLeft;
             $result[] = ++$middlePointerRight;
             return $result;
         }
-//        $numbers[$edgePointerleft]+$numbers[$edgePointerRight] < $target ? $edgePointerleft++ : $edgePointerRight--;
+        $numbers[$edgePointerleft]+$numbers[$edgePointerRight] < $target ? $edgePointerleft++ : $edgePointerRight--;
         $numbers[$middlePointerLeft]+$numbers[$middlePointerRight] > $target ? $middlePointerLeft-- : $middlePointerRight++;
     }
 }
