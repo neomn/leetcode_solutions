@@ -1,24 +1,12 @@
 <?php
 
 function twoSum($numbers, $target) {
-    $edgePointerleft = 0;
-    $edgePointerRight = count($numbers)-1;
-    $middlePointerLeft = floor(count($numbers)/2)-1;
-    $middlePointerRight = $middlePointerLeft+1;
-    $result = [];
-    while (count($result)===0){
-        if ($numbers[$edgePointerleft]+$numbers[$edgePointerRight] == $target){
-            $result[] = ++$edgePointerleft;
-            $result[] = ++$edgePointerRight;
-            return $result;
-        }
-        if ($numbers[$middlePointerLeft]+$numbers[$middlePointerRight] == $target){
-            $result[] = ++$middlePointerLeft;
-            $result[] = ++$middlePointerRight;
-            return $result;
-        }
-        $numbers[$edgePointerleft]+$numbers[$edgePointerRight] < $target ? $edgePointerleft++ : $edgePointerRight--;
-        $numbers[$middlePointerLeft]+$numbers[$middlePointerRight] > $target ? $middlePointerLeft-- : $middlePointerRight++;
+    $L = 0;
+    $R = count($numbers)-1;
+    while (true){
+        if ($numbers[$L]+$numbers[$R] == $target)
+            return [++$L, ++$R];
+        $numbers[$L]+$numbers[$R] < $target ? $L++ : $R--;
     }
 }
 
