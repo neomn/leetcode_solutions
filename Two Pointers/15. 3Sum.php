@@ -1,1 +1,5 @@
 <?php
+
+function threeSum($nums) {
+
+}
