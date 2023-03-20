@@ -3,6 +3,7 @@
 function threeSum($nums) {
     $result = [];
     sort($nums);
+    $length = count($nums);
     foreach($nums as $index => $num){
 
     }
