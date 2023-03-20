@@ -10,7 +10,7 @@ function threeSum($nums) {
         $left = $i + 1;
         $right = $length - 1;
         while ($left < $right) {
-
+            $sum = $nums[$i] + $nums[$left] + $nums[$right];
         }
     }
 }
