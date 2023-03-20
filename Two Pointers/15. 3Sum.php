@@ -13,6 +13,8 @@ function threeSum($nums) {
             $sum = $nums[$i] + $nums[$left] + $nums[$right];
             if ($sum < 0)
                 $left++;
+            elseif ($sum > 0)
+                $right--;
         }
     }
 }
