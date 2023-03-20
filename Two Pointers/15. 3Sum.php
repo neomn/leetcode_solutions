@@ -1,6 +1,7 @@
 <?php
 
 function threeSum($nums) {
+    sort($nums);
 
 }
 
