@@ -21,6 +21,8 @@ function threeSum($nums) {
                     $left++;
                 while ($left < $right && $nums[$right] == $nums[$right - 1])
                     $right--;
+                $left++;
+                $right--;
             }
         }
     }
