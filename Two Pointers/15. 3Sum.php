@@ -17,6 +17,8 @@ function threeSum($nums) {
                 $right--;
             else {
                 $result[] = array($nums[$i], $nums[$left], $nums[$right]);
+                while ($left < $right && $nums[$left] == $nums[$left + 1])
+                    $left++;
             }
         }
     }
