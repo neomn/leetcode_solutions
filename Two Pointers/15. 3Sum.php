@@ -7,6 +7,8 @@ function threeSum($nums) {
     for ($i = 0; $i < $length - 2; $i++) {
         if ($i > 0 && $nums[$i] == $nums[$i - 1])
             continue;
+        $left = $i + 1;
+        $right = $length - 1;
     }
 }
 
