@@ -1,6 +1,7 @@
 <?php
 
 function threeSum($nums) {
+    $result = [];
     sort($nums);
     foreach($nums as $index => $num){
 
