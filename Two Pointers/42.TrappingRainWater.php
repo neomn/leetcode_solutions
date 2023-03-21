@@ -2,6 +2,7 @@
 
 function trap($height) {
     $trappedWater = $maxLeft = $maxRight = $left = 0;
+    $right = count($height) - 1;
     foreach ($height as $index => $h){
 
     }
