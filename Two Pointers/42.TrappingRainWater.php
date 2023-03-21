@@ -6,6 +6,7 @@ function trap($height) {
     while($left < $right) {
         if ($height[$left] < $height[$right]) {
             $maxLeft = max($maxLeft, $height[$left]);
+            $trappedWater += $maxLeft - $height[$left];
         }
     }
     return $trappedWater;
