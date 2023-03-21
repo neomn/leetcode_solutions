@@ -9,6 +9,9 @@ function trap($height) {
             $trappedWater += $maxLeft - $height[$left];
             ++$left;
         }
+        else {
+
+        }
     }
     return $trappedWater;
 }
