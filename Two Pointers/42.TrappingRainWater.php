@@ -11,6 +11,7 @@ function trap($height) {
         }
         else {
             $maxRight = max($maxRight, $height[$right]);
+            $trappedWater += $maxRight - $height[$right];
         }
     }
     return $trappedWater;
