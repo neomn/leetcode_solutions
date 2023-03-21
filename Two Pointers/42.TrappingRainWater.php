@@ -4,7 +4,9 @@ function trap($height) {
     $trappedWater = $maxLeft = $maxRight = $left = 0;
     $right = count($height) - 1;
     while($left < $right) {
+        if ($height[$left] < $height[$right]) {
 
+        }
     }
     return $trappedWater;
 }
