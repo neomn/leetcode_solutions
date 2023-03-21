@@ -1,7 +1,7 @@
 <?php
 
 function trap($height) {
-    $trappedWater = $maxLeft = $maxRight = 0;
+    $trappedWater = $maxLeft = $maxRight = $left = 0;
     foreach ($height as $index => $h){
 
     }
