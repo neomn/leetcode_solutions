@@ -6,6 +6,7 @@ function maxArea($height) {
     while($left<$right){
         if ($height[$left] < $height[$right]){
             $maxArea = max($maxArea, ($height[$left] * $length));
+            ++$left;
         }
     }
 }
