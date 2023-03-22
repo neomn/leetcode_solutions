@@ -4,7 +4,9 @@ function maxArea($height) {
     $maxArea = $left = 0;
     $right = $length = count($height)-1;
     while($left<$right){
+        if ($height[$left] < $height[$right]){
 
+        }
     }
 }
 
