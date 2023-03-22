@@ -9,6 +9,7 @@ function maxArea($height) {
             ++$left;
         }else {
             $maxArea = max($maxArea, ($height[$right] * $length));
+            --$right;
         }
     }
 }
