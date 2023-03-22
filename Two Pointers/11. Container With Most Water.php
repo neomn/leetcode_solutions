@@ -11,6 +11,7 @@ function maxArea($height) {
             $maxArea = max($maxArea, ($height[$right] * $length));
             --$right;
         }
+        --$length;
     }
 }
 
