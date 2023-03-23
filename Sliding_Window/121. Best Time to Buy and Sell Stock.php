@@ -8,7 +8,7 @@ function maxProfit($prices) {
             $min = $max = $price;
         if ($price>$max)
             $max = $price;
-
+        $maxProfit = max($maxProfit, ($max-$min));
     }
 }
 
