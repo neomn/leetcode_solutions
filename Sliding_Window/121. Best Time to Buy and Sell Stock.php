@@ -2,6 +2,7 @@
 
 function maxProfit($prices) {
     $maxProfit = 0;
+    $min = $max = $prices[0];
 
 
 }
