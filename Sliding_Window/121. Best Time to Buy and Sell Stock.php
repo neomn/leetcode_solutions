@@ -6,6 +6,9 @@ function maxProfit($prices) {
     foreach($prices as $price){
         if ($price<$min)
             $min = $max = $price;
+        if ($price>$max)
+            $max = $price;
+
     }
 }
 
