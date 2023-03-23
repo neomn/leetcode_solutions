@@ -10,6 +10,7 @@ function maxProfit($prices) {
             $max = $price;
         $maxProfit = max($maxProfit, ($max-$min));
     }
+    return $maxProfit;
 }
 
 echo maxProfit([2,4,1]);
