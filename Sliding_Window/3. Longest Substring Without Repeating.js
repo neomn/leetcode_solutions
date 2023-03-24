@@ -1,6 +1,7 @@
 
 const lengthOfLongestSubstring = function(s) {
     let max = left = 0
+    let container = new Set()
 };
 
 console.log(lengthOfLongestSubstring("abcabcbb"), ' > result shloud be 3')
