@@ -10,6 +10,7 @@ const lengthOfLongestSubstring = function(s) {
         container.add(s[i])
         max = Math.max(max, container.size)
     }
+    return max
 };
 
 console.log(lengthOfLongestSubstring("abcabcbb"), ' > result shloud be 3')
