@@ -8,3 +8,4 @@ class Solution(object):
         return s
 
     print(characterReplacement("ABAB", 2))
+    print(characterReplacement("AABABBACBB", 2))
