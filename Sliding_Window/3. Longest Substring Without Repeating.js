@@ -4,7 +4,7 @@ const lengthOfLongestSubstring = function(s) {
     let container = new Set()
     for (let i=0; i<s.length; i++){
         while (container.has(s[i])) {
-
+            container.delete(s[left])
         }
     }
 };
