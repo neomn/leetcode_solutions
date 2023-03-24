@@ -8,6 +8,7 @@ const lengthOfLongestSubstring = function(s) {
             ++left
         }
         container.add(s[i])
+        max = Math.max(max, container.size)
     }
 };
 
