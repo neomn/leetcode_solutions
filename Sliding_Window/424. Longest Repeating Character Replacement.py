@@ -1,7 +1,10 @@
 class Solution(object):
-    def characterReplacement(self, s, k):
+    def characterReplacement(s, k):
         """
         :type s: str
         :type k: int
         :rtype: int
         """
+        return s
+
+    print(characterReplacement("ABAB", 2))
