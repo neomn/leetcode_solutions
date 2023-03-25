@@ -1,9 +1,4 @@
 def characterReplacement(s, k):
-    """
-    :type s: str
-    :type k: int
-    :rtype: int
-    """
     container = []
     left = 0
     right = 0
