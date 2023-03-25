@@ -6,5 +6,5 @@ def characterReplacement(s, k):
         print(i)
 
 
-print(characterReplacement("ABAB", 2))
-print(characterReplacement("AABABBACBB", 2))
+print(characterReplacement("ABAB", 2), 'correct response > 4')
+print(characterReplacement("AABABBACBB", 2), 'correct response > 6')
