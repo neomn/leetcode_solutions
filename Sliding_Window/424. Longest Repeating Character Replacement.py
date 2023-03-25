@@ -1,5 +1,5 @@
 def characterReplacement(s, k):
-    container = []
+    container = {}
     left = 0
     right = 0
     for i in range(len(s)):
