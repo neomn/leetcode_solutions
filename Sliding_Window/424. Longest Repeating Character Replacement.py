@@ -9,6 +9,7 @@ def characterReplacement(s, k):
             hashmap[s[left]] -= 1
             left += 1
             windowSize = i + 1 - left
+        maxLength = max(maxLength, windowSize)
 
 
 print(characterReplacement("ABAB", 2), 'correct response > 4')
