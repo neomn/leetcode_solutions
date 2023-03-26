@@ -1,6 +1,6 @@
 def characterReplacement(s, k):
     container = {}
-    maxLength = left = right = 0
+    left = maxFrequency = maxLength = 0
     for i in range(len(s)):
 
 
