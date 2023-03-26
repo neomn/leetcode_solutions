@@ -16,3 +16,4 @@ def characterReplacement(s, k):
 print(characterReplacement("ABAB", 2), 'correct response > 4', "\n")
 print(characterReplacement("AABABBACBB", 2), 'correct response > 6', "\n")
 print(characterReplacement("AAAA", 0),  'correct response > 4', "\n")
+print(characterReplacement("ABAA", 0),  'correct response > 2', "\n")
