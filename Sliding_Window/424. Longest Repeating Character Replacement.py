@@ -13,5 +13,6 @@ def characterReplacement(s, k):
     return maxLength
 
 
-print(characterReplacement("ABAB", 2), 'correct response > 4')
-print(characterReplacement("AABABBACBB", 2), 'correct response > 6')
+print(characterReplacement("ABAB", 2), 'correct response > 4', "\n")
+print(characterReplacement("AABABBACBB", 2), 'correct response > 6', "\n")
+print(characterReplacement("AAAA", 0),  'correct response > 4', "\n")
