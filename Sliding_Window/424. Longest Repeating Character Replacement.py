@@ -7,6 +7,7 @@ def characterReplacement(s, k):
         windowSize = i + 1 - left
         if windowSize - maxFrequency > k:
             hashmap[s[left]] -= 1
+            left += 1
 
 
 print(characterReplacement("ABAB", 2), 'correct response > 4')
