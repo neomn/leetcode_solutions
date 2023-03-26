@@ -10,6 +10,7 @@ def characterReplacement(s, k):
             left += 1
             windowSize = i + 1 - left
         maxLength = max(maxLength, windowSize)
+    return maxLength
 
 
 print(characterReplacement("ABAB", 2), 'correct response > 4')
