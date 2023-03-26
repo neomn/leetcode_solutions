@@ -1,5 +1,5 @@
 def characterReplacement(s, k):
-    container = {}
+    hashmap = {}
     left = maxFrequency = maxLength = 0
     for i in range(len(s)):
 
