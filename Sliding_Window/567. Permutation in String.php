@@ -8,6 +8,9 @@ function checkInclusion($s1, $s2){
     if ($lenS1 > $lenS2)
         return false;
 
+    for ($i=0; $i < $lenS1; $i++){
+
+    }
 }
 
 
