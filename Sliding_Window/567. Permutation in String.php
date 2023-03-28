@@ -1,5 +1,8 @@
 <?php
 
+function checkInclusion($s1, $s2){
+
+}
 
 
 
