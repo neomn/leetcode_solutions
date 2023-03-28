@@ -22,5 +22,6 @@ function checkInclusion($s1, $s2){
 }
 
 echo checkInclusion('ab',   'eidbaooo') ,     'true',"\n";
+echo checkInclusion('abac', 'eidbaooo') ,     'false',"\n";
 
 
