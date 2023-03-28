@@ -1,7 +1,6 @@
 <?php
 
-function checkInclusion($s1, $s2)
-{
+function checkInclusion($s1, $s2){
     $hashmap = $buffer = $requiredChars = [];
     $lenS1 = strlen($s1);
     $lenS2 = strlen($s2);
@@ -22,5 +21,6 @@ function checkInclusion($s1, $s2)
     }
 }
 
+echo checkInclusion('ab',   'eidbaooo') ,     'true',"\n";
 
 
