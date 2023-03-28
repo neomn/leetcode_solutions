@@ -9,7 +9,9 @@ function checkInclusion($s1, $s2){
         return false;
 
     for ($i=0; $i < $lenS1; $i++){
+        if ($s1[$i] !== $s2[$i]){
 
+            }
     }
 }
 
