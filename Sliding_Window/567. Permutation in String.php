@@ -10,6 +10,9 @@ function checkInclusion($s1, $s2){
         ++$mapS1[ord($s1[$i]) - ord('a')];
         ++$mapS2[ord($s2[$i]) - ord('a')];
     }
+    for ($i=0; $i<26; $i++)
+        if ($mapS1[$i] === $mapS2[$i])
+            ++$matches;
     $left = 0;
 
 }
