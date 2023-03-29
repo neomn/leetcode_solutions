@@ -14,16 +14,26 @@ function checkInclusion($s1, $s2){
         if ($mapS1[$i] === $mapS2[$i])
             ++$matches;
     $left = 0;
-
+    for ($i=$lenS1; $i<$lenS2; $i++){
+        if ($matches == 26)
+            return true;
+        $index = ord($s2[$i]) - ord('a');
+        ++$mapS2[$index];
+        if ($mapS1[$index] === $mapS2[$index])
+            ++$matches;
+        elseif ($mapS1[$index]+1 === $mapS2[$index])
+            --$matches;
+    }
+    return $matches == 26;
 }
 
 
 
-//echo checkInclusion('ab',   'eidbaooo') ,     'true',"\n";
-//echo checkInclusion('ab',   'eidboaooo') ,     'false',"\n";
-//echo checkInclusion('abac', 'eidbaooo') ,     'false',"\n";
+echo checkInclusion('ab',   'eidbaooo') ,     'true',"\n";
+echo checkInclusion('ab',   'eidboaooo') ,     'false',"\n";
+echo checkInclusion('abac', 'eidbaooo') ,     'false',"\n";
 echo checkInclusion('adc',  'dcda') ,         'true',"\n";
-//echo checkInclusion('ab',   'ab') ,           'true',"\n";
-//echo checkInclusion('abca', 'ccccbbbbaaaa') , 'false',"\n";
+echo checkInclusion('ab',   'ab') ,           'true',"\n";
+echo checkInclusion('abca', 'ccccbbbbaaaa') , 'false',"\n";
 
 
