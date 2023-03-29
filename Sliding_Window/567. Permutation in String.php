@@ -6,6 +6,10 @@ function checkInclusion($s1, $s2){
     $lenS2 = strlen($s2);
     $matches = 0;
     $mapS1 = $mapS2 = array_fill(0,26,0);
+    for ($i=0; $i<$lenS1; $i++){
+        ++$mapS1[ord($s1[$i]) - ord('a')];
+        ++$mapS2[ord($s2[$i]) - ord('a')];
+    }
     $left = 0;
 
 }
