@@ -21,14 +21,6 @@ function checkInclusion($s1, $s2){
             isset($requiredChars[$s1[$i]]) ? ++$requiredChars[$s1[$i]] : $requiredChars[$s1[$i]] = 1;
         else if ($buffer[$s1[$i]] !== 0)
             --$buffer[$s1[$i]];
-
-
-
-//        if (isset($requiredChars[$s2[$i]]))
-//            --$requiredChars[$s2[$i]];
-//        if (isset($requiredChars[$s2[$i]]) && $requiredChars[$s2[$i]] === 0)
-//            unset($requiredChars[$s2[$i]]);
-
     }
     print_r($requiredChars);
 }
