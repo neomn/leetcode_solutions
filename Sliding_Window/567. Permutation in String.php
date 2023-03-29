@@ -1,7 +1,6 @@
 <?php
 
 function checkInclusion($s1, $s2){
-    $hashmap = $buffer = $requiredChars = [];
     $lenS1 = strlen($s1);
     $lenS2 = strlen($s2);
     $matches = 0;
@@ -33,8 +32,6 @@ function checkInclusion($s1, $s2){
     }
     return $matches == 26;
 }
-
-
 
 echo checkInclusion('ab',   'eidbaooo') ,     'true',"\n";
 echo checkInclusion('ab',   'eidboaooo') ,     'false',"\n";
