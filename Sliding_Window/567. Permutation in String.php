@@ -39,5 +39,6 @@ echo checkInclusion('abac', 'eidbaooo') ,     'false',"\n";
 echo checkInclusion('adc',  'dcda') ,         'true',"\n";
 echo checkInclusion('ab',   'ab') ,           'true',"\n";
 echo checkInclusion('abca', 'ccccbbbbaaaa') , 'false',"\n";
+echo checkInclusion('bab', 'ccccbbbbaaaa') , 'true',"\n";
 
 
