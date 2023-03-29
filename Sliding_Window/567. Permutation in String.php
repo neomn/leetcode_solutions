@@ -11,8 +11,12 @@ function checkInclusion($s1, $s2){
     for ($i = 0; $i < $lenS1; $i++) {
         isset($hashmap[$s1[$i]]) ? ++$hashmap[$s1[$i]] : $hashmap[$s1[$i]] = 1;
         isset($buffer[$s2[$i]]) ? ++$buffer[$s2[$i]] : $buffer[$s2[$i]] = 1;
+        if (!isset($buffer[$s1[$i]]))
+            isset($requiredChars[$s1[$i]]) ? ++$requiredChars[$s1[$i]] : $requiredChars[$s1[$i]] = 1;
 
-//        isset($requiredChars[$s1[$i]]) ? ++$requiredChars[$s1[$i]] : $requiredChars[$s1[$i]] = 1;
+
+
+
 //        if (isset($requiredChars[$s2[$i]]))
 //            --$requiredChars[$s2[$i]];
 //        if (isset($requiredChars[$s2[$i]]) && $requiredChars[$s2[$i]] === 0)
