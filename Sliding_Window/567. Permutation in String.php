@@ -4,6 +4,7 @@ function checkInclusion($s1, $s2){
     $hashmap = $buffer = $requiredChars = [];
     $lenS1 = strlen($s1);
     $lenS2 = strlen($s2);
+
     $left = 0;
     if ($lenS1 > $lenS2)
         return false;
@@ -22,6 +23,9 @@ function checkInclusion($s1, $s2){
         else if ($buffer[$s1[$i]] !== 0)
             --$buffer[$s1[$i]];
     }
+    if (!$requiredChars)
+        return true;
+
     print_r($requiredChars);
 }
 
