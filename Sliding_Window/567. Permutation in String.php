@@ -23,6 +23,13 @@ function checkInclusion($s1, $s2){
             ++$matches;
         elseif ($mapS1[$index]+1 === $mapS2[$index])
             --$matches;
+        $index = ord($s2[$left]) - ord('a');
+        --$mapS2[$index];
+        if ($mapS1[$index] === $mapS2[$index])
+            ++$matches;
+        elseif ($mapS1[$index]-1 === $mapS2[$index])
+            --$matches;
+        ++$left;
     }
     return $matches == 26;
 }
