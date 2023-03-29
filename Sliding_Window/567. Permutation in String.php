@@ -13,7 +13,8 @@ function checkInclusion($s1, $s2){
         isset($buffer[$s2[$i]]) ? ++$buffer[$s2[$i]] : $buffer[$s2[$i]] = 1;
         if (!isset($buffer[$s1[$i]]))
             isset($requiredChars[$s1[$i]]) ? ++$requiredChars[$s1[$i]] : $requiredChars[$s1[$i]] = 1;
-
+        else if ($buffer[$s1[$i]] !== 0)
+            --$buffer[$s1[$i]];
 
 
 
