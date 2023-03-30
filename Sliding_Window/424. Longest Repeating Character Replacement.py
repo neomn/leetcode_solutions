@@ -4,12 +4,10 @@ def characterReplacement(s, k):
     for i in range(len(s)):
         hashmap[s[i]] = hashmap.get(s[i], 0) + 1
         maxFrequency = max(maxFrequency, hashmap.get(s[i]))
-        windowSize = i + 1 - left
-        if windowSize - maxFrequency > k:
+        if i+1-left - maxFrequency > k:
             hashmap[s[left]] -= 1
             left += 1
-            windowSize = i + 1 - left
-        maxLength = max(maxLength, windowSize)
+        maxLength = max(maxLength, i+1-left)
     return maxLength
 
 
