@@ -4,7 +4,7 @@ const minWindow = function(s, t) {
     for (let char of t)
         mapT[char] = (mapT[char] || 0) + 1;
     for (let right = 0, left = 0; right < s.length; right++) {
-
+        if (mapT[s[right]] > 0) --len
     }
 }
 
