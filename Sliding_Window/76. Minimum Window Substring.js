@@ -12,6 +12,7 @@ const minWindow = function(s, t) {
                 result = [left, right];
             }
             if (mapT[s[left]] >= 0) ++len
+            ++mapT[s[left]];
         }
     }
 }
