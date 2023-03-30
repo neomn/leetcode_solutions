@@ -16,6 +16,7 @@ const minWindow = function(s, t) {
             ++left;
         }
     }
+    return s.slice(result[0], result[1] + 1);
 }
 
 console.log(minWindow('ADOBECODEBANC', 'ABC') , ' BANC')
