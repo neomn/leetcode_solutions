@@ -9,6 +9,7 @@ const minWindow = function(s, t) {
         while (!len) {
             if (right - left < min) {
                 min = right - left;
+                result = [left, right];
             }
         }
     }
