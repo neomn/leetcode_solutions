@@ -6,6 +6,11 @@ const minWindow = function(s, t) {
     for (let right = 0, left = 0; right < s.length; right++) {
         if (mapT[s[right]] > 0) --len
         --mapT[s[right]]
+        while (!len) {
+            if (right - left < min) {
+                min = right - left;
+            }
+        }
     }
 }
 
