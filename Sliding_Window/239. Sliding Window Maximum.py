@@ -13,6 +13,7 @@ def maxSlidingWindow(nums: list[int], k: int) -> list[int]:
             deque.popleft()
         if (right + 1) >= k:
             result.append(nums[deque[0]])
+            left += 1
 
 
 print(maxSlidingWindow([1,3,-1,-3,5,3,6,7], 3))
