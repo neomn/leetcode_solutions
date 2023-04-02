@@ -7,7 +7,10 @@ function isValid($s) {
         ']' => '[',
         '}' => '{'
     ];
+    $stack = [];
+    for ($i=0; $i<$len; $i++){
 
+    }
 }
 
 
