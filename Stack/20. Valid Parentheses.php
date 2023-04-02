@@ -1,7 +1,7 @@
 <?php
 
 function isValid($s) {
-
+    $len = strlen($s);
 
 }
 
