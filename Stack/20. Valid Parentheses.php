@@ -2,6 +2,11 @@
 
 function isValid($s) {
     $len = strlen($s);
+    $match = [
+        ')' => '(',
+        ']' => '[',
+        '}' => '{'
+    ];
 
 }
 
