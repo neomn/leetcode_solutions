@@ -16,6 +16,7 @@ function isValid($s) {
         else if ( array_pop($stack) !==  $match[$s[$i]] )
             return false;
     }
+    return empty($stack);
 }
 
 
