@@ -9,7 +9,8 @@ function isValid($s) {
     ];
     $stack = [];
     for ($i=0; $i<$len; $i++){
-
+        if ($i === 0 && isset($match[$s[$i]]))
+            return false;
     }
 }
 
