@@ -13,6 +13,8 @@ function isValid($s) {
             return false;
         if (!isset($match[$s[$i]]))
             $stack[] = $s[$i];
+        else if ( array_pop($stack) !==  $match[$s[$i]] )
+            return false;
     }
 }
 
