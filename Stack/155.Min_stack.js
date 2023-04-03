@@ -13,7 +13,7 @@ MinStack.prototype.push = function(val) {
 };
 
 MinStack.prototype.pop = function() {
-
+    this.stack.pop()
 };
 
 MinStack.prototype.top = function() {
