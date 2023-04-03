@@ -1,6 +1,7 @@
 
 var MinStack = function() {
     let stack = []
+    let minStack = [Infinity]
 };
 
 MinStack.prototype.push = function(val) {
