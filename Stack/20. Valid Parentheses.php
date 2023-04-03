@@ -1,22 +1,13 @@
 <?php
 
 function isValid($s) {
-    $len = strlen($s);
-    $match = [
-        ')' => '(',
-        ']' => '[',
-        '}' => '{'
-    ];
-    $stack = [];
-    for ($i=0; $i<$len; $i++){
-        if ($i === 0 && isset($match[$s[$i]]))
-            return false;
-        if (!isset($match[$s[$i]]))
-            $stack[] = $s[$i];
-        else if ( array_pop($stack) !==  $match[$s[$i]] )
-            return false;
-    }
-    return empty($stack);
+    do {
+       $len = strlen($s);
+       $s = str_replace('()','',$s);
+       $s = str_replace('{}','',$s);
+       $s = str_replace('[]','',$s);
+    } while ($len !== strlen($s));
+    return strlen($s) === 0;
 }
 
 
