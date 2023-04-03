@@ -1,6 +1,6 @@
 
 var MinStack = function() {
-
+    let stack = []
 };
 
 MinStack.prototype.push = function(val) {
