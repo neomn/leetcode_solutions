@@ -9,6 +9,7 @@ var MinStack = function() {
 MinStack.prototype.push = function(val) {
     let min = Math.min(val, this.getMin())
     this.stack.push(val)
+    this.minStack.push(min)
 };
 
 MinStack.prototype.pop = function() {
