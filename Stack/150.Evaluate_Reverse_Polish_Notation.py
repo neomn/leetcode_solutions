@@ -11,6 +11,7 @@ def evalRPN(tokens: list[str]) -> int:
         elif element == '*':
             stack.append(b * a)
         elif element == '/':
+            stack.append(b // a)
 
 
 print('output should be 9 > ', evalRPN(["2","1","+","3","*"]))
