@@ -4,6 +4,7 @@ def evalRPN(tokens: list[str]) -> int:
     for element in tokens:
         if element in '+-*/':
             a, b = stack.pop(), stack.pop()
+        if element == '+':
 
 
 print('output should be 9 > ', evalRPN(["2","1","+","3","*"]))
