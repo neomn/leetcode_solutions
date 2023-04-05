@@ -8,7 +8,7 @@ public:
             return;
         }
         if (open < n) {
-
+            cur.push_back('(');
         }
     }
 };
