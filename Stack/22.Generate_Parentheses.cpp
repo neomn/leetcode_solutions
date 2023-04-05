@@ -13,7 +13,7 @@ public:
             cur.pop_back();
         }
         if (close < open) {
-
+            cur.push_back(')');
         }
     }
 };
