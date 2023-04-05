@@ -18,4 +18,8 @@ public:
             cur.pop_back();
         }
     }
+    vector<string> generateParenthesis(int n) {
+
+
+    }
 };
