@@ -12,5 +12,8 @@ public:
             helper(open+1, close, n);
             cur.pop_back();
         }
+        if (close < open) {
+
+        }
     }
 };
