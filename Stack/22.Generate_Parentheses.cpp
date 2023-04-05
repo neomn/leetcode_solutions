@@ -19,7 +19,8 @@ public:
         }
     }
     vector<string> generateParenthesis(int n) {
-
-
+        cur.reserve(n*2);
+        helper(0, 0, n);
+        return result;
     }
 };
