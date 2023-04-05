@@ -7,5 +7,8 @@ public:
             result.emplace_back(cur);
             return;
         }
+        if (open < n) {
+
+        }
     }
 };
