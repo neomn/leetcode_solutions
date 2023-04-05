@@ -14,6 +14,7 @@ public:
         }
         if (close < open) {
             cur.push_back(')');
+            helper(open, close+1, n);
         }
     }
 };
