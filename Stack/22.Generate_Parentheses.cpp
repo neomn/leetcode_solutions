@@ -1,6 +1,7 @@
 class Solution {
 public:
-    vector<string> generateParenthesis(int n) {
-        
+    vector<string> result;
+    void helper(int open, int close, int n) {
+
     }
 };
