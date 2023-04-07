@@ -12,6 +12,7 @@ function largestRectangleArea($heights) {
         }
         $stack[] = $i;
     }
+    return $maxArea;
 }
 
 largestRectangleArea([2,4]);
