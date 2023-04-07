@@ -15,5 +15,6 @@ function largestRectangleArea($heights) {
     return $maxArea;
 }
 
-largestRectangleArea([2,4]);
+echo largestRectangleArea([2,4]) , "\n";
+echo largestRectangleArea([2,1,5,6,2,3]) , "\n";
 
