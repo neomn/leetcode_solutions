@@ -1,6 +1,7 @@
 <?php
 
 function largestRectangleArea($heights) {
+    $maxArea = 0;
 
 }
 
