@@ -10,6 +10,7 @@ function largestRectangleArea($heights) {
             $w = !$stack ? $i : $i - end($stack) - 1;
             $maxArea = max($maxArea, ($h * $w));
         }
+        $stack[] = $i;
     }
 }
 
