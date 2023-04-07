@@ -3,6 +3,7 @@
 function largestRectangleArea($heights) {
     $maxArea = 0;
     $stack = [];
+    $heights[] = 0;
 
 }
 
