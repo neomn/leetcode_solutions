@@ -17,4 +17,5 @@ function largestRectangleArea($heights) {
 
 echo largestRectangleArea([2,4]) , "\n";
 echo largestRectangleArea([2,1,5,6,2,3]) , "\n";
+echo largestRectangleArea([2,0,1,5,6,2,3]) , "\n";
 
