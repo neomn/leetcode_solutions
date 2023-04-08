@@ -5,5 +5,6 @@ def dailyTemperatures(temperatures: list[int]) -> list[int]:
         while stack and temp > temperatures[stack[-1]]:
             result[stack.pop()] = index - stack[-1]
         stack.append(index)
+    return result
 
 
