@@ -4,5 +4,6 @@ def dailyTemperatures(temperatures: list[int]) -> list[int]:
     for index, temp in enumerate(temperatures):
         while stack and temp > temperatures[stack[-1]]:
             result[stack.pop()] = index - stack[-1]
+        stack.append(index)
 
 
