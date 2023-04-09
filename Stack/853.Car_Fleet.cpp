@@ -7,7 +7,7 @@ int carFleet(int target, const std::vector<int>& position, const std::vector<int
     vector<pair<int,int>> car;
     int n = speed.size();
     for(int i=0; i<n; i++)
-        car.emplace_back({position[i], speed[i]});
+        car.emplace_back(position[i], speed[i]);
     sort(sort.begin(),car.end());
     stack<float> stk;
 
