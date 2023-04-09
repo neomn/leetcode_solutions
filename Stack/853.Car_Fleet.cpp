@@ -13,6 +13,7 @@ int carFleet(int target, const std::vector<int>& position, const std::vector<int
     for(int i = n - 1; i >= 0 ; i--) {
         float timeToArrive = (float) (target - car[i].first) / (float)car[i].second;
         if(!stk.empty() && timeToArrive <= stk.top())
+            continue;
     }
 }
 
