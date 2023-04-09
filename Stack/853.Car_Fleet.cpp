@@ -16,6 +16,7 @@ int carFleet(int target, const std::vector<int>& position, const std::vector<int
             continue;
         else stk.push(timeToArrive);
     }
+    return stk.size();
 }
 
 int main() {
