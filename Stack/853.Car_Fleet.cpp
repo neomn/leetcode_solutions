@@ -10,7 +10,9 @@ int carFleet(int target, const std::vector<int>& position, const std::vector<int
         car.emplace_back(position[i], speed[i]);
     sort(car.begin(),car.end());
     stack<float> stk;
-
+    for(int i = n - 1; i >= 0 ; i--) {
+        float timeToArrive = (float) (target - car[i].first) / (float)car[i].second;
+    }
 }
 
 int main() {
