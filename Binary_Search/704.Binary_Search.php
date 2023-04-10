@@ -5,6 +5,8 @@ function search($nums, $target){
     $right = count($nums) - 1;
     while ($left <= $right) {
         $mid = $left + floor(($right - $left) / 2);
+        if ($nums[$mid] == $target)
+            return $mid;
     }
 }
 
