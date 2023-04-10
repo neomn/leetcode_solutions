@@ -3,7 +3,9 @@
 function search($nums, $target){
     $left = 0;
     $right = count($nums) - 1;
+    while ($left <= $right) {
 
+    }
 }
 
 echo search([-1,0,2,5,6,8,9,14,20], 9);
