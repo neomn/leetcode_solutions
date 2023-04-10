@@ -4,7 +4,7 @@ function search($nums, $target){
     $left = 0;
     $right = count($nums) - 1;
     while ($left <= $right) {
-
+        $mid = $left + floor(($right - $left) / 2);
     }
 }
 
