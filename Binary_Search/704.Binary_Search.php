@@ -1,6 +1,8 @@
 <?php
 
 function search($nums, $target){
+    $left = 0;
+    $right = count($nums) - 1;
 
 }
 
