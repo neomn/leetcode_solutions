@@ -7,6 +7,8 @@ function search($nums, $target){
         $mid = $left + floor(($right - $left) / 2);
         if ($nums[$mid] == $target)
             return $mid;
+        elseif ($nums[$mid] < $target)
+            $left = $mid + 1;
     }
 }
 
