@@ -12,6 +12,7 @@ function minEatingSpeed($piles, $h) {
             $left = $k + 1;
         else {
             $result = min($result, $k);
+            $right = $k -1;
         }
     }
 }
