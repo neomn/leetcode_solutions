@@ -8,6 +8,8 @@ function minEatingSpeed($piles, $h) {
         $HPerK = 0;
         foreach ($piles as $pile)
             $HPerK += ceil($pile/$k);
+        if ($HPerK > $h)
+            $left = $k + 1;
 
     }
 }
