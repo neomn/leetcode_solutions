@@ -2,7 +2,7 @@
 
 function minEatingSpeed($piles, $h) {
     $left = 1;
-    $right = max($piles);
+    $right = $result = max($piles);
 
 }
 
