@@ -15,6 +15,7 @@ function minEatingSpeed($piles, $h) {
             $right = $k -1;
         }
     }
+    return $result;
 }
 
 echo minEatingSpeed([3,6,7,11], 8), "\n";
