@@ -5,6 +5,7 @@ function minEatingSpeed($piles, $h) {
     $right = $result = max($piles);
     while ($left <= $right){
         $k = floor(($left+$right)/2);
+        $HPerK = 0;
 
     }
 }
