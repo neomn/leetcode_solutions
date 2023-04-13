@@ -9,6 +9,7 @@ function findMin($nums) {
         $middle = ($l+$r) >> 1;
         $nums[$middle] < $nums[$r] ? $r = $middle-1 : $l = $middle+1;
     }
+    return min($nums[$l], $nums[$middle]);
 }
 
 echo findMin([3,4,5,1,2]), "\n";
