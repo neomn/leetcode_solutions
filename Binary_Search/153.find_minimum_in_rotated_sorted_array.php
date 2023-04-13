@@ -7,6 +7,7 @@ function findMin($nums) {
         return $nums[0];
     while($nums[$l] > $nums[$r]){
         $middle = ($l+$r) >> 1;
+        $nums[$middle] < $nums[$r] ? $r = $middle-1 : $l = $middle+1;
     }
 }
 
