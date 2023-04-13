@@ -13,3 +13,4 @@ function findMin($nums) {
 }
 
 echo findMin([3,4,5,1,2]), "\n";
+echo findMin([3,1,2]), "\n";
