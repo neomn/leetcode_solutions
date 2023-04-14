@@ -26,6 +26,7 @@ def search(nums, target):
                 r = mid-1
 
 
+    return -1
             
 
 search([4,5,6,7,0,1,2], 0)
