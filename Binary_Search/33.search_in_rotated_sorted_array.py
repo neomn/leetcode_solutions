@@ -13,6 +13,7 @@ def search(nums, target):
                 r = mid-1
             
 
+        elif nums[l] > nums[mid]:
 
 
 
