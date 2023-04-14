@@ -14,6 +14,8 @@ def search(nums, target):
             
 
         elif nums[l] > nums[mid]:
+            if target < nums[mid] or target >= nums[l]:
+                r = mid-1
 
 
 
