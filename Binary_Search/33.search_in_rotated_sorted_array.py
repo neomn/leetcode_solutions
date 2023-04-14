@@ -21,6 +21,7 @@ def search(nums, target):
 
         else:
             if target > nums[mid]:
+                l = mid+1
 
 
             
