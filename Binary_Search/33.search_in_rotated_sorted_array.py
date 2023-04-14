@@ -19,6 +19,7 @@ def search(nums, target):
             else: 
                 l = mid+1
 
+        else:
 
 
             
