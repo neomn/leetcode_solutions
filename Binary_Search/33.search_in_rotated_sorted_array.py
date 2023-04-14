@@ -6,6 +6,7 @@ def search(nums, target):
         if nums[mid] == target:
             return mid
         
+        if nums[l] <= nums[mid]:
             
 
 
