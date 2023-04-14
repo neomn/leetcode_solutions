@@ -23,6 +23,7 @@ def search(nums, target):
             if target > nums[mid]:
                 l = mid+1
             else:
+                r = mid-1
 
 
             
