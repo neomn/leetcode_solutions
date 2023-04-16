@@ -22,5 +22,6 @@ public:
       if (timestamp < vec[0].first) 
           return "";
       
+      int l = 0, r = n-1;
     }
 };
