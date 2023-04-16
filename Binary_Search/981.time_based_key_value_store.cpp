@@ -12,6 +12,7 @@ public:
     
     string get(string key, int timestamp) {
       if (store.find(key) == store.end()) 
+         return "";
       
          
       
