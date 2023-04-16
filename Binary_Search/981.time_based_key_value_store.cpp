@@ -20,6 +20,7 @@ public:
          return vec[n-1].second;
          
       if (timestamp < vec[0].first) 
+          return "";
       
     }
 };
