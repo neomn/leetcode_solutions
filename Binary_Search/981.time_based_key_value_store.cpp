@@ -30,5 +30,6 @@ public:
          else 
             r = mid - 1;
       }
+      return vec[l].second;
     }
 };
