@@ -17,6 +17,7 @@ public:
       auto& vec = store[key];
       int n = vec.size();
       if (timestamp >= vec[n-1].first) 
+         return vec[n-1].second;
          
       
     }
