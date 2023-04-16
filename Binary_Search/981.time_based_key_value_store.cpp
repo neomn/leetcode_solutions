@@ -27,6 +27,8 @@ public:
          int mid = (l + r + 1) / 2;
          if (vec[mid].first <= timestamp) 
             l = mid;
+         else 
+            r = mid - 1;
       }
     }
 };
