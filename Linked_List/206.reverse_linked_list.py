@@ -6,3 +6,4 @@ def reverseList(head):
         current.next = previous
         previous = current
         current = temp
+    return previous
