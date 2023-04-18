@@ -5,3 +5,4 @@ def reverseList(head):
         temp = current.next
         current.next = previous
         previous = current
+        current = temp
