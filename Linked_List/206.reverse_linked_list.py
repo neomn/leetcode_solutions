@@ -1,11 +1,4 @@
-<?php
 
-function helper($h)
-{
-}
+def reverseList(head): 
+    
 
-function reverseList($head)
-{
-}
-
-print_r(reverseList([1, 2, 3, 4, 5]));
