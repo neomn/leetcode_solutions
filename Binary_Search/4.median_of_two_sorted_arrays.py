@@ -23,5 +23,9 @@ def findMedianSortedArrays(nums1: list[int], nums2:list[int])-> float:
                     return min(Aright, Bright)
                 # even
                 return (max(Aleft, Bleft) + min(Aright, Bright)) / 2
+            elif Aleft > Bright:
+                r = i - 1
+            else:
+                l = i + 1
 
 findMedianSortedArrays([1,2,3,4,5], [1,1,2])
