@@ -15,6 +15,7 @@ def findMedianSortedArrays(nums1: list[int], nums2:list[int])-> float:
             Aleft = A[i] if i >= 0 else float("-infinity")
             Aright = A[i + 1] if (i + 1) < len(A) else float("infinity")
             Bleft = B[j] if j >= 0 else float("-infinity")
+            Bright = B[j + 1] if (j + 1) < len(B) else float("infinity")
 
 
 findMedianSortedArrays([1,2,3,4,5], [1,1,2])
