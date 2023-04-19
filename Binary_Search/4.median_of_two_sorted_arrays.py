@@ -10,6 +10,8 @@ def findMedianSortedArrays(nums1: list[int], nums2:list[int])-> float:
         l, r = 0, len(A) - 1
         while True:
             i = (l + r) // 2  # A
+            j = half - i - 2  # B
+
 
 
 findMedianSortedArrays([1,2,3,4,5], [1,1,2])
