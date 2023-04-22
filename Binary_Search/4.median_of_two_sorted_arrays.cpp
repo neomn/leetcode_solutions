@@ -9,7 +9,15 @@ public:
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
         int count1 = nums1.size(), count2 = nums2.size();
         int totalCount = count1 + count2, half = totalCount >> 1;
-   
+        
+        // set nums1 to be the smaller array
+        if (count1 > count2){
+            nums1.swap(nums2);
+
+         }
+        
+
+          
     }
 };
 
