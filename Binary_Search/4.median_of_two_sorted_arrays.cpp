@@ -23,6 +23,8 @@ public:
             mid = (l+r) >> 1;
             j = half - mid - 2; 
 
+            int n1Left = mid >= 0 ? nums1[mid] : INT_MIN;
+            int n1Right = mid+1 < count1 ? nums1[mid+1] : INT_MAX;
 
          }
           
