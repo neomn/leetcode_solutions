@@ -25,6 +25,8 @@ public:
 
             int n1Left = mid >= 0 ? nums1[mid] : INT_MIN;
             int n1Right = mid+1 < count1 ? nums1[mid+1] : INT_MAX;
+            int n2Left = j >= 0 ? nums2[j] : INT_MIN;
+            int n2Right = j+1 < count2 ? nums2[j+1] : INT_MAX;
 
          }
           
