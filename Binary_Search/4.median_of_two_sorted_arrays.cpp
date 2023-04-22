@@ -35,6 +35,8 @@ public:
             }
             else if (n1Left > n2Right)
                r = mid - 1;
+            else 
+               l = mid + 1;
          }
           
     }
