@@ -28,6 +28,11 @@ public:
             int n2Left = j >= 0 ? nums2[j] : INT_MIN;
             int n2Right = j+1 < count2 ? nums2[j+1] : INT_MAX;
 
+            if (n1Left <= n2Right && n2Left <= n1Right){
+               if (totalCount % 2 != 0)
+                  return min(n1Right, n2Right);
+               return (max(n1Left, n2Left) + min(n1Right, n2Right)) / 2.0;
+            }
          }
           
     }
