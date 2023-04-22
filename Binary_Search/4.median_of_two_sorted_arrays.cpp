@@ -13,7 +13,9 @@ public:
         // set nums1 to be the smaller array
         if (count1 > count2){
             nums1.swap(nums2);
-
+            count1 ^= count2;
+            count2 ^= count1;
+            count1 ^= count2;
          }
         
 
