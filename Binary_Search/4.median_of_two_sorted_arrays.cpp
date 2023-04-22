@@ -33,6 +33,8 @@ public:
                   return min(n1Right, n2Right);
                return (max(n1Left, n2Left) + min(n1Right, n2Right)) / 2.0;
             }
+            else if (n1Left > n2Right)
+               r = mid - 1;
          }
           
     }
