@@ -18,7 +18,7 @@ public:
             count1 ^= count2;
          }
         
-
+        int l = 0, r = count1-1, mid, j;
           
     }
 };
