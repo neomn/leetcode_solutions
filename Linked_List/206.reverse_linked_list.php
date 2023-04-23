@@ -4,6 +4,7 @@ class Solution
 {
   function reverseList($head)
   {
+    return $this->helper(null, $head);
   }
 
   function helper($ref = null, $head)
