@@ -23,5 +23,6 @@ class Solution
 
     $temp = $head->next;
     $head->next = $ref;
+    return $this->helper($head, $temp);
   }
 }
