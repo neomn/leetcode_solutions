@@ -8,5 +8,16 @@ class Solution
 
   function helper($ref = null, $head)
   {
+
+    //uncomment this if u want to see what's going on
+    // echo 'ref > ';
+    // var_dump($ref);
+    // echo "\n";
+    // echo 'head > ';
+    // var_dump($head);
+    // echo "\n";
+    // echo '-----------------------------', "\n";
+
+
   }
 }
