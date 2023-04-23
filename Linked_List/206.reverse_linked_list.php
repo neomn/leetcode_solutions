@@ -18,6 +18,7 @@ class Solution
     // echo "\n";
     // echo '-----------------------------', "\n";
 
-
+    if ($head == null)
+      return $ref;
   }
 }
