@@ -20,5 +20,7 @@ class Solution
 
     if ($head == null)
       return $ref;
+
+    $temp = $head->next;
   }
 }
