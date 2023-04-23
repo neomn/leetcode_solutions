@@ -9,4 +9,14 @@ class ListNode
     $this->val = $val;
     $this->next = $next;
   }
+
+  public function getNext()
+  {
+    return $this->next;
+  }
+
+  public function setNext($next)
+  {
+    $this->next = $next;
+  }
 }
