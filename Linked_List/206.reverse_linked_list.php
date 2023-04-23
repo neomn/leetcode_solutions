@@ -22,5 +22,6 @@ class Solution
       return $ref;
 
     $temp = $head->next;
+    $head->next = $ref;
   }
 }
