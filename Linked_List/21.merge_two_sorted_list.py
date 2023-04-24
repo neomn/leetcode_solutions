@@ -22,4 +22,7 @@ def mergeTwoLists(list1: listNode, list2: listNode) -> listNode:
 
         if list1:
             head.next = list1
+        elif list2:
+            head.next = list2
 
+        return result.next
