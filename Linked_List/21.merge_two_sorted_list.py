@@ -12,5 +12,7 @@ def mergeTwoLists(list1: listNode, list2: listNode) -> listNode:
         head = result
 
         while list1 and list2:
+            if list1.val < list2.val:
+                head.next = list1
 
 
