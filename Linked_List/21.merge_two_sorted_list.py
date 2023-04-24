@@ -8,6 +8,7 @@ def mergeTwoLists(list1: listNode, list2: listNode) -> listNode:
         if not list2:
             return list1
 
+        result = ListNode()
 
 
 
