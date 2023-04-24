@@ -18,5 +18,6 @@ def mergeTwoLists(list1: listNode, list2: listNode) -> listNode:
             else:
                 head.next = list2
                 list2 = list2.next
+            head = head.next
 
 
