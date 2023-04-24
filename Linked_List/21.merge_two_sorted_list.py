@@ -9,6 +9,7 @@ def mergeTwoLists(list1: listNode, list2: listNode) -> listNode:
             return list1
 
         result = ListNode()
+        head = result
 
 
 
