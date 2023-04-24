@@ -11,5 +11,6 @@ def mergeTwoLists(list1: listNode, list2: listNode) -> listNode:
         result = ListNode()
         head = result
 
+        while list1 and list2:
 
 
