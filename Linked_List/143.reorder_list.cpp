@@ -22,5 +22,7 @@ public:
             temp = firstHalf->next, temp2 = secondHalf->next;
             firstHalf->next = secondHalf;
             secondHalf->next = temp;
+            firstHalf = temp, secondHalf = temp2;
+        }  
     }
 };
