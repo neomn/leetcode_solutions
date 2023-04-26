@@ -12,5 +12,6 @@ public:
         slow->next = previous = NULL;
         while (secondHalf){
             temp = secondHalf->next;
+            secondHalf->next = previous;
     }
 };
