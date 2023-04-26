@@ -1,6 +1,7 @@
 class Solution {
 public:
     void reorderList(ListNode* head) {
-        cout << &head << endl;
+        ListNode *slow = head, *fast = head->next;
+        
     }
 };
