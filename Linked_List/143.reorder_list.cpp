@@ -10,5 +10,7 @@ public:
 
         secondHalf = slow->next;
         slow->next = previous = NULL;
+        while (secondHalf){
+            temp = secondHalf->next;
     }
 };
