@@ -20,5 +20,6 @@ public:
         firstHalf = head, secondHalf = previous;
         while (secondHalf){
             temp = firstHalf->next, temp2 = secondHalf->next;
+            firstHalf->next = secondHalf;
     }
 };
