@@ -13,5 +13,7 @@ public:
         while (secondHalf){
             temp = secondHalf->next;
             secondHalf->next = previous;
+            previous = secondHalf;
+            secondHalf = temp;
     }
 };
