@@ -7,5 +7,8 @@ public:
             slow = slow->next;
             fast = fast->next->next;
         }
+
+        secondHalf = slow->next;
+        slow->next = previous = NULL;
     }
 };
