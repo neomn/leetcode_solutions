@@ -15,5 +15,8 @@ public:
             secondHalf->next = previous;
             previous = secondHalf;
             secondHalf = temp;
+        }
+
+        firstHalf = head, secondHalf = previous;
     }
 };
