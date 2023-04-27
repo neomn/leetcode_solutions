@@ -13,5 +13,6 @@ function removeNthFromEnd($head, $n)
 
   while ($head->next) {
     $temp = $temp->next;
+    $head = $head->next;
   }
 }
