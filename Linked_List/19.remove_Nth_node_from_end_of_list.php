@@ -6,5 +6,6 @@ function removeNthFromEnd($head, $n)
   $temp = $head;
   while ($n != 0) {
     $head = $head->next;
+    --$n;
   }
 }
