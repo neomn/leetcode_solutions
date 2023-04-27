@@ -8,4 +8,6 @@ function removeNthFromEnd($head, $n)
     $head = $head->next;
     --$n;
   }
+  if ($head == null)
+    return $result->next;
 }
