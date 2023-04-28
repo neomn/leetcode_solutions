@@ -13,3 +13,4 @@ def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
         copy.next = oldToCopy[cur.next]
         copy.random = oldToCopy[cur.random]
         cur = cur.next
+    return oldToCopy[head]
