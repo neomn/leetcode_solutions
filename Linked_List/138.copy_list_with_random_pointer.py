@@ -5,3 +5,4 @@ def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
     cur = head
     while cur:
         copy = Node(cur.val)
+        oldToCopy[cur] = copy
