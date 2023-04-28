@@ -7,4 +7,6 @@ def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
         copy = Node(cur.val)
         oldToCopy[cur] = copy
         cur = cur.next
-        cur = head
+    cur = head
+    while cur:
+        copy = oldToCopy[cur]
