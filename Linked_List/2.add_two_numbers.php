@@ -13,5 +13,6 @@ function addTwoNumbers($l1, $l2)
       $sum -= 10;
     }
     $temp->val = $sum;
+    $l1 = $l1 ? $l1->next : null;
   }
 }
