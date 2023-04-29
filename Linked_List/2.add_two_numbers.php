@@ -12,5 +12,6 @@ function addTwoNumbers($l1, $l2)
       $carry = 1;
       $sum -= 10;
     }
+    $temp->val = $sum;
   }
 }
