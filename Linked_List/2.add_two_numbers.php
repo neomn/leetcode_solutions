@@ -14,5 +14,6 @@ function addTwoNumbers($l1, $l2)
     }
     $temp->val = $sum;
     $l1 = $l1 ? $l1->next : null;
+    $l2 = $l2 ? $l2->next : null;
   }
 }
