@@ -10,6 +10,7 @@ function addTwoNumbers($l1, $l2)
     $carry = 0;
     if ($sum > 9) {
       $carry = 1;
+      $sum -= 10;
     }
   }
 }
