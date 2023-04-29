@@ -20,4 +20,5 @@ function addTwoNumbers($l1, $l2)
       $temp = $temp->next;
     }
   }
+  return $result;
 }
