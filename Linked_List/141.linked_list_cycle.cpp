@@ -4,4 +4,6 @@ bool hasCycle(ListNode *head) {
     return false;
 
   ListNode *slow = head, *fast = head;
-}
+
+  while (fast->next != NULL && fast->next->next != NULL) {
+  }
