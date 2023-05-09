@@ -8,4 +8,7 @@ class Solution
     $this->invert($root);
     return $root;
   }
+  function invert($root)
+  {
+  }
 }
