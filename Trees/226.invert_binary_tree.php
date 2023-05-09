@@ -10,5 +10,7 @@ class Solution
   }
   function invert($root)
   {
+    if (!$root->left && !$root->right)
+      return;
   }
 }
