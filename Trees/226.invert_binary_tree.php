@@ -13,5 +13,6 @@ class Solution
     if (!$root->left && !$root->right)
       return;
     $this->invert($root->left);
+    $this->invert($root->right);
   }
 }
