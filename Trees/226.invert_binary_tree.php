@@ -15,5 +15,6 @@ class Solution
     $this->invert($root->left);
     $this->invert($root->right);
     $temp = $root->left;
+    $root->left = $root->right;
   }
 }
