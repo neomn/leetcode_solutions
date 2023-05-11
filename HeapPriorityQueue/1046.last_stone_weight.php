@@ -11,4 +11,6 @@ function lastStoneWeight($stones)
     if ($x != $y)
       $heap->insert($y - $x);
   }
+  if ($heap->isEmpty())
+    return 0;
 }
