@@ -8,5 +8,7 @@ function lastStoneWeight($stones)
   while ($heap->count() > 1) {
     $y = $heap->extract();
     $x = $heap->extract();
+    if ($x != $y)
+      $heap->insert($y - $x);
   }
 }
