@@ -13,4 +13,5 @@ function lastStoneWeight($stones)
   }
   if ($heap->isEmpty())
     return 0;
+  return $heap->extract();
 }
