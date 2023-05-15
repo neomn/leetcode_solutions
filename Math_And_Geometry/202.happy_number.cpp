@@ -14,5 +14,7 @@ bool isHappy(int n) {
       return true;
     if (sums.count(sum)) 
       return false;
+    sums.insert(sum);
+    n = sum;
   }
 }
