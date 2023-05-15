@@ -10,5 +10,7 @@ bool isHappy(int n) {
       sum += digit * digit;
       n /= 10;
     }
+    if (sum == 1) 
+      return true;
   }
 }
