@@ -10,4 +10,5 @@ function plusOne($digits)
     $digits[$i] = 0;
   }
   array_unshift($digits, 1);
+  return $digits;
 }
