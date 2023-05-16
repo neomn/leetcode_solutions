@@ -7,5 +7,6 @@ function plusOne($digits)
     $digits[$i]++;
     if ($digits[$i] < 10)
       return $digits;
+    $digits[$i] = 0;
   }
 }
