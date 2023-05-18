@@ -8,5 +8,7 @@ class Solution
 
   function subsets($nums)
   {
+    $this->nums = $nums;
+    $this->count = count($nums);
   }
 }
