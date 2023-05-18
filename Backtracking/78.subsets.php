@@ -20,5 +20,6 @@ class Solution
       $this->result[] = $temp;
       return;
     }
+    $element = $this->nums[$counter];
   }
 }
