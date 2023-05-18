@@ -22,5 +22,7 @@ class Solution
     }
     $element = $this->nums[$counter];
     ++$counter;
+    $cp = $temp;
+    $cp[] = $element;
   }
 }
