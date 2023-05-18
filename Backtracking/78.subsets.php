@@ -21,5 +21,6 @@ class Solution
       return;
     }
     $element = $this->nums[$counter];
+    ++$counter;
   }
 }
