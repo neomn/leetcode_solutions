@@ -24,5 +24,7 @@ class Solution
     ++$counter;
     $cp = $temp;
     $cp[] = $element;
+    $this->helper($temp, $counter);
+    $this->helper($cp, $counter);
   }
 }
