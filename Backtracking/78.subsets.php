@@ -10,5 +10,7 @@ class Solution
   {
     $this->nums = $nums;
     $this->count = count($nums);
+    $this->helper([]);
+    return $this->result;
   }
 }
