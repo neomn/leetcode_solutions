@@ -5,3 +5,4 @@ class Solution:
         
         # works both as while loop and single value check 
         while (b & mask) > 0:
+            carry = ( a & b ) << 1
