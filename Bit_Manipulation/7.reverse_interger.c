@@ -8,4 +8,5 @@ int reverse(int x){
                 return 0;
         res = (res * 10) + digit;
     }
+    return res;
 }
