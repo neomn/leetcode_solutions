@@ -10,4 +10,5 @@ class Solution:
             top += 1
             for i in range(top, bottom):
                 res.append(matrix[i][right - 1])
+            right -= 1
 
