@@ -7,4 +7,5 @@ class Solution:
         while left < right and top < bottom:
             for i in range(left, right):
                 res.append(matrix[top][i])
+            top += 1
 
