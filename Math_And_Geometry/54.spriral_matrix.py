@@ -8,4 +8,6 @@ class Solution:
             for i in range(left, right):
                 res.append(matrix[top][i])
             top += 1
+            for i in range(top, bottom):
+                res.append(matrix[i][right - 1])
 
