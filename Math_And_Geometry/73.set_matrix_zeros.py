@@ -6,3 +6,7 @@ class Solution:
             for j in range(n):
                 if matrix[i][j] == 0:
                     matrix[0][j] = 0
+                    if i>0:
+                        matrix[i][0] = 0
+                    else: 
+                        helperCell = True
