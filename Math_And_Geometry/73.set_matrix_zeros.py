@@ -4,3 +4,5 @@ class Solution:
         helperCell = False
         for i in range(m):
             for j in range(n):
+                if matrix[i][j] == 0:
+                    matrix[0][j] = 0
