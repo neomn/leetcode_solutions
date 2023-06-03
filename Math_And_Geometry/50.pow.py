@@ -4,3 +4,4 @@ class Solution:
             if n==0: return 1
             if x==0: return 0
             temp = helper(x*x, n//2)
+            return temp*x if n%2 else temp
