@@ -5,3 +5,5 @@ class Solution:
             if x==0: return 0
             temp = helper(x*x, n//2)
             return temp*x if n%2 else temp
+        
+        res = helper(x, abs(n))
