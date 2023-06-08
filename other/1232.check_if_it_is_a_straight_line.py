@@ -7,4 +7,4 @@ class Solution:
             r = y/x if x != 0 else float('inf')
             if r != ratio: 
                 return False
-            return true
+        return true
