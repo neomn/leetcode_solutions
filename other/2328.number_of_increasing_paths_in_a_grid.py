@@ -3,3 +3,4 @@ class Solution:
         m, n = len(grid), len(grid[0])
         mod = 10**9 + 7
         dp = [[0] * n for _ in range(m)]
+        directions = [[0,-1], [0,1], [-1,0], [1,0]]
