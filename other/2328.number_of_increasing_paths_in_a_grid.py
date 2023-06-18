@@ -13,3 +13,5 @@ class Solution:
                 if 0 <= prev_i < m and 0 <= prev_j <n and grid[prev_i][prev_j] < grid[i][j]:
                     ans += dfs(prev_i, prev_j) % mod
             dp[i][j] = ans
+            return ans
+        
