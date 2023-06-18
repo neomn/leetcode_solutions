@@ -7,3 +7,4 @@ class Solution:
         def dfs(i,j):
             if dp[i][j]:
                 return dp[i][j]
+            ans = 1
