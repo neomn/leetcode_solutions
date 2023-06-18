@@ -15,3 +15,4 @@ class Solution:
             dp[i][j] = ans
             return ans
         
+        return sum(dfs(i,j) for i in range(m) for j in range(n)) % mod
