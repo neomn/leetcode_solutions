@@ -3,3 +3,4 @@ class Solution:
         m, temp = 0, 0
         for alt in gain:
             temp += alt
+            m = max(m, temp)
