@@ -12,3 +12,4 @@ class Solution:
         for i in range(k + 1, n - k):
             window += nums[i + k] - nums[i - k - 1]
             avgs[i] = window // window_size
+        return avgs
