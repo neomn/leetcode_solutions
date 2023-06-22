@@ -5,3 +5,4 @@ class Solution:
             tmp = hold
             hold = max(hold, free - prices[i])
             free = max(free, tmp + prices[i] - fee)
+        return free
