@@ -3,3 +3,4 @@ class Solution:
         dp = {0:0}
         for r in rods:
             new_dp = dp.copy()
+            for diff, taller in dp.items():
