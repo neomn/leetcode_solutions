@@ -4,3 +4,4 @@ class Solution:
         for r in rods:
             new_dp = dp.copy()
             for diff, taller in dp.items():
+                shorter = taller - diff
