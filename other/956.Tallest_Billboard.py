@@ -6,3 +6,4 @@ class Solution:
             for diff, taller in dp.items():
                 shorter = taller - diff
                 new_dp[diff + r] = max(new_dp.get(diff + r, 0), taller + r)                
+                new_diff = abs(shorter + r - taller)
