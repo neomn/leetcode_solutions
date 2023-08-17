@@ -16,3 +16,7 @@ class Solution:
             i, j = q.get()
             for r, c in directions:
                 new_i, new_j = i + r, j + c
+                if (0 <= new_i < m)  and  (0 <= new_j < n):
+                    if mat[i][j] + 1 < mat[new_i][new_j]:
+                        mat[new_i][new_j] = mat[i][j] + 1
+        
