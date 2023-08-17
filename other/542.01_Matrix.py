@@ -10,3 +10,5 @@ class Solution:
                     q.put((i, j))
                 else:
                     mat[i][j] = float('inf')
+                    
+        directions = [(0, 1), (0, -1), (1, 0), (-1, 0)]
