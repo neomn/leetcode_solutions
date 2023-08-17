@@ -12,3 +12,7 @@ class Solution:
                     mat[i][j] = float('inf')
                     
         directions = [(0, 1), (0, -1), (1, 0), (-1, 0)]
+        while not q.empty():
+            i, j = q.get()
+            for r, c in directions:
+                new_i, new_j = i + r, j + c
