@@ -6,3 +6,7 @@ class Solution:
         m, n = len(mat), len(mat[0])
         for i in range(m):
             for j in range(n):
+                if mat[i][j] == 0:
+                    q.put((i, j))
+                else:
+                    mat[i][j] = float('inf')
